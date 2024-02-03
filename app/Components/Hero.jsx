@@ -10,8 +10,8 @@ const Hero = () => {
             <a href="" className='btn'>preview</a>
 
             <div>
-                <a href="" className='btn'>38:14 <br /> Time</a>
-                <a href="" className='btn'>165 <br /> Calories</a>
+                <a href="" className='btn'> <span className="text-yellow">38:14</span> <br /> Time</a>
+                <a href="" className='btn'><span className='text-red'>165</span> <br /> Calories</a>
             </div>
         </section>
     )
