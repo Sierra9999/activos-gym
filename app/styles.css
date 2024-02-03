@@ -1,0 +1,27 @@
+:root{
+    --grey : rgb(25,25,25);
+    --green : rgb(36,170,117);
+    --light-grey : rgb(120, 120, 120);
+}
+
+.btn{
+    padding: 1rem;
+    background-color: var(--grey);
+    border-radius: 5px;
+    min-width: 130px;
+    display: inline-block;
+    text-align: center;
+}
+
+.green-background{
+    background-color: var(--green) ;
+}
+
+.hero-title {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+.text-dim{
+    color: var(--light-grey);
+}
