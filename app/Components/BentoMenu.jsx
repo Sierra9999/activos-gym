@@ -4,27 +4,27 @@ const BentoMenu = () => {
 
   const workouts = [
     {
-      name: 'Treadmill',
+      workoutName: 'Treadmill',
       workoutTime : '00:00',
       caloriesBurnt : '100',
     },
     {
-      name: 'Yoga',
+      workoutName: 'Yoga',
       workoutTime : '00:00',
       caloriesBurnt : '100',
     },
     {
-      name: 'Weight Lifting',
+      workoutName: 'Weight Lifting',
       workoutTime : '00:00',
       caloriesBurnt : '100',
     },
     {
-      name: 'Samba',
+      workoutName: 'Samba',
       workoutTime : '00:00',
       caloriesBurnt : '100',
     },
     {
-      name: 'Kickboxing',
+      workoutName: 'Kickboxing',
       workoutTime : '00:00',
       caloriesBurnt : '100',
     },
@@ -34,7 +34,7 @@ const BentoMenu = () => {
     classname,
     imgSrc,
     alt = "no alternative text was provided",
-    title,
+    workoutName,
     caloriesBurnt,
     workoutTime
   }) => {
@@ -44,7 +44,7 @@ const BentoMenu = () => {
         <img src={imgSrc} alt={alt} />
       </figure>
       <div>
-        <h2>{title}</h2>
+        <h2>{workoutName}</h2>
         <p>{workoutTime}</p>
         <p>{caloriesBurnt}</p>
       </div>
@@ -53,8 +53,8 @@ const BentoMenu = () => {
 
   return (
     <section class="grid md:grid-cols-3 grid-cols-2 gap-4 mt-10">
-      {workouts.map(({caloriesBurnt,name, workoutTime},index)=>(WorkoutCard({
-          title:name, 
+      {workouts.map(({caloriesBurnt,workoutName, workoutTime},index)=>(WorkoutCard({
+          workoutName, 
           caloriesBurnt,
           workoutTime, 
           alt: '',
