@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} px-10 py-5 `}>
+      <body className={`${inter.className} md:mx-10 md:px-20 px-5 py-5 `}>
         <Header></Header>
         {children}
       </body>
