@@ -8,14 +8,20 @@
 
 .btn{
     padding: 0.5rem 1rem;
-    background-color: var(--grey);
     border-radius: 5px;
     display: inline-block;
     text-align: center;
+    font-weight: 600;
 }
 
-.green-background{
-    background-color: var(--green) ;
+@media (prefers-color-scheme: dark) {
+    .btn{
+        color: var(--grey);
+    }
+  }
+
+.caret-green{
+    caret-color: var(--green);
 }
 
 .hero-title {

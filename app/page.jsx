@@ -1,11 +1,30 @@
 import Image from "next/image";
 import Hero from "./Components/Hero";
 import BentoMenu from "./Components/BentoMenu";
-export default function Home() {
+import NewsLetterForm from './Components/NewsLetterForm'
+import os from 'os'
+
+async function getAllCharacters() {
+  const data = await fetch(`http://localhost:3000/api/emails`)
+
+  if (!data.ok) {
+    throw new Error('Failed to fetch data')
+  }
+
+  return data.json()
+}
+
+export default async function Home() {
+
+  let emails = await getAllCharacters()
+  console.log(emails)
   return (
-<main>
-  <Hero></Hero>
-  <BentoMenu></BentoMenu>
-</main>
+
+    <main>
+      <h1>{emails? emails[1] : 'waiting'}</h1>
+      <Hero></Hero>
+      <BentoMenu></BentoMenu>
+      <NewsLetterForm></NewsLetterForm>
+    </main>
   );
 }

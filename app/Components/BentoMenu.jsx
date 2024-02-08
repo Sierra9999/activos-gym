@@ -46,7 +46,7 @@ const BentoMenu = () => {
     workoutTime
   }) => {
     return (
-      <article className={` ${classname}`}>
+      <article className={` rounded-md overflow-hidden ${classname}`}>
 
         <figure className='h-full'>
           <Image className='object-cover w-full h-full' width={300} height={300} src={imgSrc} alt={alt} />
@@ -58,14 +58,14 @@ const BentoMenu = () => {
             <a href="" className='btn mr-2'><span className='text-red'>{caloriesBurnt}</span> <br /> Calories</a>
           </div>
         </div>
-        <div class="relative bg-black opacity-50  h-full bottom-full hover:opacity-25 cursor-pointer "></div>
+        <div className="relative bg-black opacity-50  h-full bottom-full hover:opacity-25 cursor-pointer "></div>
       </article>)
   }
 
   return (
     <section>
       <h1 className=' mt-10 text-center text-bold text-3xl'>Find your perfect match 💫</h1>
-      <section class="grid md:grid-cols-3 grid-cols-2 gap-4 mt-7">
+      <section className="grid md:grid-cols-3 grid-cols-2 gap-4 mt-7">
         {workouts.map(({ caloriesBurnt, workoutName, workoutTime, imgSrc }, index) => (WorkoutCard({
           imgSrc,
           workoutName,
