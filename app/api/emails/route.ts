@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const emails = {
-    '1' : "some.email@outlook.com"
-}
+const emails = [ 
+    "some.email@outlook.com"
+]
 
 export async function GET() {
     return NextResponse.json(emails)
@@ -10,7 +10,17 @@ export async function GET() {
 
 export async function POST(request: NextRequest) {
     await request.json().then(x =>{
-        console.log(x)
+        emails.push(x)       
     })
-    return NextResponse.json(emails)
+    console.log(emails)
+
+    return NextResponse.json({
+        success : true ,
+        data : emails, 
+        message: "succesful!",    
+    },
+    {
+        status : 200,
+    })
+
 }

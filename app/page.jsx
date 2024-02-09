@@ -21,7 +21,7 @@ export default async function Home() {
   return (
 
     <main>
-      <h1>{emails? emails[1] : 'waiting'}</h1>
+      <h1>{emails? emails[0] : 'waiting'}</h1>
       <Hero></Hero>
       <BentoMenu></BentoMenu>
       <NewsLetterForm></NewsLetterForm>
