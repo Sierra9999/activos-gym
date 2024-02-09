@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hero from "./Components/Hero";
 import BentoMenu from "./Components/BentoMenu";
-import NewsLetterForm from './Components/NewsLetterForm/'
+import NewsLetterForm from './Components/NewsLetterForm'
 import os from 'os'
 
 async function getAllCharacters() {
