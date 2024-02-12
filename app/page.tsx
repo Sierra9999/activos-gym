@@ -1,7 +1,8 @@
-import Image from "next/image";
 import Hero from "./Components/Hero";
 import BentoMenu from "./Components/BentoMenu";
 import NewsLetter from './Components/NewsLetter'
+import Modal from "./Components/Modal";
+
 
 async function getAllCharacters() {
   const data = await fetch(`http://localhost:3000/api/emails`)
@@ -20,10 +21,12 @@ export default async function Home() {
   return (
 
     <main>
+      <Modal></Modal>
       <h1>{emails? emails[0] : 'waiting'}</h1>
       <Hero></Hero>
       <BentoMenu></BentoMenu>
       <NewsLetter></NewsLetter>
+
     </main>
   );
 }

@@ -6,7 +6,7 @@ const Header = () => {
         <div><a href="/">Home</a></div>
         <nav>
           <ul className='flex justify-center items-center' >
-            <li className='mx-2 sm:mx-4'>Exercises</li>
+            <li className='mx-2 sm:mx-4'><a href="/#exercises">Exercises</a></li>
             <li className='mx-2 sm:mx-4'>Trainers</li>
             <li className='mx-2 sm:mx-4'><a href="/pricing">Pricing</a></li>
           </ul>
