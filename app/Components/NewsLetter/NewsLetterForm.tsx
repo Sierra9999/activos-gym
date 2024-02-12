@@ -22,7 +22,7 @@ const NewsLetterForm = () => {
       <form 
         onSubmit={(e)=>{onSubmitHandler(e)}} 
         className='my-10 flex flex-col sm:flex-row content-center items-center'>
-        <label className='w-full md:w-1/2 ' htmlFor="email">
+        <label className='w-full text-2xl text-green-400 flex justify-center items-center md:w-1/2' htmlFor="email">Email:
           <input 
             className='w-full bg-transparent border-b-2 border-green-700 focus:outline-none caret-green h-12' 
             type="email" 

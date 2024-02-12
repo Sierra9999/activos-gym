@@ -14,12 +14,6 @@
     font-weight: 600;
 }
 
-@media (prefers-color-scheme: dark) {
-    .btn{
-        color: var(--grey);
-    }
-  }
-
 .caret-green{
     caret-color: var(--green);
 }
@@ -37,7 +31,6 @@
 {
     color: var(--red);
 }
-
 .text-yellow{
     color :var(--yellow)
 }
