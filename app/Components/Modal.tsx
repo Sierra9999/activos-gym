@@ -13,7 +13,7 @@ const Modal:React.FC<{children?: React.ReactNode}> = ({children}) => {
             ${ visible? '':'hidden'}
             w-full
             h-screen
-            sticky
+            fixed
             z-10
             top-0
             left-0`}>

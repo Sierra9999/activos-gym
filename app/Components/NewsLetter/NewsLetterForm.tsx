@@ -1,5 +1,6 @@
 'use client'
 import React, { FormEvent } from 'react'
+import Modal from '../Modal'
 
 const NewsLetterForm = () => {
   const [email, setEmail] = React.useState<string>('')
@@ -40,6 +41,7 @@ const NewsLetterForm = () => {
           className='btn bg-green-700 mx-auto sm:mx-5 my-5 bg-green-700'>
             Make Good things happen
         </button>
+        <Modal><h1>🫵🤡 are a 🤡</h1></Modal>
       </form>
     </>
   )
