@@ -65,14 +65,14 @@ const BentoMenu = () => {
   return (
     <section>
       <h1 id='exercises' className=' mt-10 text-center text-bold text-3xl'>Find your perfect match 💫</h1>
-      <section className="grid md:grid-cols-3 grid-cols-2 gap-4 mt-7">
+      <section className="grid md:grid-cols-3 sm:grid-cols-2 gap-4 mt-7">
         {workouts.map(({ caloriesBurnt, workoutName, workoutTime, imgSrc }, index) => (WorkoutCard({
           imgSrc,
           workoutName,
           caloriesBurnt,
           workoutTime,
           alt: '',
-          classname: index > 0 ? '' : 'col-span-2 md:col-span-2 h-96'
+          classname: index > 0 ? 'col-span-2 sm:col-span-1' : 'col-span-2 md:col-span-2 h-96'
         })))}
       </section>
     </section>
