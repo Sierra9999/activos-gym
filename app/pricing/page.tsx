@@ -7,7 +7,7 @@ const Pricing = () => {
       <h1 className='text-center my-10'>Revitalize with monthly fitness 🔥 conquer your goals today!</h1>
       <section className="
         flex
-        justify-around
+        justify-center
         flex-wrap
         align-center
         my-10">

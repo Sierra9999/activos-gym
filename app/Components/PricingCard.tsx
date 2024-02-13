@@ -11,11 +11,13 @@ const PricingCard:React.FC<{
         bg-gray-400 
         p-8 
         min-h-96 
-        min-w-60
+        min-w-56
         bg-green-to-black
         rounded-lg
         border-2
-        border-green-400' >
+        border-green-400
+        mt-6
+        mr-5' >
         <h1 className='text-lg relative t-0'>{title}</h1>
         <h2 className='text-lg relative t-0'>{price}</h2>
         {children}
