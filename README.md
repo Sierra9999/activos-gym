@@ -1,6 +1,6 @@
 # Next.JS fullstack application 
 
-###Tech used
+### Tech used
 - Next.js
 - React
 - Typescript
