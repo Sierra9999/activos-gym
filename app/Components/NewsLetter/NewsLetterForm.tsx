@@ -39,7 +39,7 @@ const NewsLetterForm = () => {
         md:w-1/2' htmlFor="email">Email:
           <input 
             className='w-full bg-transparent border-b-2 border-green-700 focus:outline-none caret-green h-12' 
-            type="email" 
+            type='email'
             id='email'
             required
             value={email}
