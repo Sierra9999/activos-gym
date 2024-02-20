@@ -1,16 +1,21 @@
 'use client'
 import React from 'react'
 
-const Modal:React.FC<{children?: React.ReactNode}> = ({children}) => {
-    const [visible,setVisible] = React.useState(false)
+const Modal:React.FC<{
+  isOpen : boolean
+  setIsOpen ?: React.Dispatch<SetStateAction<boolean>>
+  children?: React.ReactNode}> = ({setIsOpen,children, isOpen = false}) => {
   return (
-    <div 
+    <div
+        onClick={()=>{
+          setIsOpen? setIsOpen(false) : null
+        }}
         className={`
             flex
             justify-center
             items-center
             bg-black/50
-            ${ visible? '':'hidden'}
+            ${ isOpen? '':'hidden'}
             w-full
             h-screen
             fixed
