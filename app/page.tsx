@@ -9,7 +9,6 @@ export default async function Home() {
       <Hero></Hero>
       <BentoMenu></BentoMenu>
       <NewsLetter></NewsLetter>
-
     </main>
   );
 }
