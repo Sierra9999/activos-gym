@@ -1,6 +1,7 @@
 import Hero from "./Components/Hero";
 import BentoMenu from "./Components/BentoMenu";
 import NewsLetter from './Components/NewsLetter'
+import BMI from "./Components/BMI";
 
 export default async function Home() {
   return (
@@ -8,6 +9,7 @@ export default async function Home() {
     <main>
       <Hero></Hero>
       <BentoMenu></BentoMenu>
+      <BMI/>
       <NewsLetter></NewsLetter>
     </main>
   );
