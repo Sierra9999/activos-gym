@@ -1,10 +1,12 @@
 import React from 'react'
-
+import SocialIcons from '../SocialIcons'
 const Footer = () => {
     return (
         <section className='py-20 min-h-48 flex justify-between'>
             <section className="flex-1">
-                Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.
+                <h1>Activos Gym</h1>
+                Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.            
+                <SocialIcons/>
             </section>
             <section className='flex-1 pl-5' >       
                     <h3 className="text-bottom-accent">Our classes <span ></span></h3>
