@@ -1,12 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
-import Facebook from './Facebook'
+import Socials, {SocialsProps} from './Icons/Socials'
+const iconsSize : number = 26
+const platforms : Array<SocialsProps['name']> = ['facebook','pinterest','twitter', 'youtube']
+
 const SocialIcons = () => {
   return (
-    <div>
-        {/* <Image src={'/Icons/facebook.svg'} height={32} width={32} style={{fill :"#FF0000"}} alt='something' /> */}
-        <Facebook/>
-    </div>
+    <section className='flex py-5'>
+        {platforms.map((platform)=>(<a href="#" className='mr-3'><Socials name={platform} size={iconsSize} /></a>))}
+    </section>
   )
 }
 
