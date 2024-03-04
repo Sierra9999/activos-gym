@@ -6,7 +6,7 @@ const platforms : Array<SocialsProps['name']> = ['facebook','pinterest','twitter
 const SocialIcons = () => {
   return (
     <section className='flex py-5'>
-        {platforms.map((platform)=>(<a href="#" className='mr-3'><Socials name={platform} size={iconsSize} /></a>))}
+        {platforms.map((platform,index)=>(<a key={index} href="#" className='mr-3'><Socials name={platform} size={iconsSize} /></a>))}
     </section>
   )
 }
