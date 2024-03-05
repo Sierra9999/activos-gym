@@ -1,6 +1,7 @@
-export function calculateBMI(height : number, weight : number ) {
-    height = height/100
-    const bmi = weight /(height * height)
+export function calculateBMI(height : number|string, weight : number|string ) {
+    
+    height = Number(height)/100
+    const bmi = Number(weight) /(height * height)
     return bmi.toFixed(2)
 }
 
