@@ -3,7 +3,7 @@ import React from "react";
 import "./styles.css";
 import { calculateBMI, rateBMI } from "./calculateBMI";
 
-const index = () => {
+const BMICalculator = () => {
   const [height, setHeight] = React.useState("");
   const [weight, setWeight] = React.useState("");
   const [results, setResults] = React.useState(0)
@@ -74,4 +74,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default BMICalculator;
