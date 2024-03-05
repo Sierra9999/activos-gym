@@ -2,7 +2,7 @@ import React from 'react'
 import SocialIcons from '../SocialIcons'
 const Footer = () => {
     return (
-        <section className='py-20 flex flex-col md:flex-row min-h-48'>
+        <section className='section-margin py-20 flex flex-col md:flex-row min-h-48'>
             <section className="md:w-1/3">
                 <h1>Activos Gym</h1>
                 Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.
@@ -26,7 +26,6 @@ const Footer = () => {
                     <p>Closed</p>
                 </section>
             </div>
-
         </section>
     )
 }

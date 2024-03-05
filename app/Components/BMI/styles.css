@@ -27,3 +27,35 @@ input[type=number],input [type=text] {
     font-size: 1rem;
     width: 5rem;
 }
+
+.results{
+    position: relative;
+    top : 2rem;
+}
+
+.left-to-right{
+    animation: slidein 0.3s linear    ;
+}
+
+@keyframes slidein {
+    from {
+        top : -20px;
+        opacity: 0;
+    }
+    to {
+        top: 2rem;
+        opacity: 1;
+    }
+}
+
+.underweight{
+    color: rgb(255, 200, 81);
+}
+
+.normal {
+    color: rgb(86, 247, 86);
+}
+
+.overweight{
+    color: rgb(253, 71, 71) ;
+}

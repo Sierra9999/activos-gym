@@ -13,6 +13,7 @@
     display: inline-block;
     text-align: center;
     font-weight: 600;
+    color: black;
 }
 
 .bg-green-to-black {
@@ -63,4 +64,9 @@
     display: inline-block;
     height: 6px;
     width: 40px;
+}
+
+
+.section-margin{
+    margin-left: 2rem;
 }
