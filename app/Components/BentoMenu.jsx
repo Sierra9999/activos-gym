@@ -46,7 +46,7 @@ const BentoMenu = () => {
     workoutTime
   }) => {
     return (
-      <article className={` rounded-md overflow-hidden ${classname}`}>
+      <article className={`scale-on-hover rounded-md overflow-hidden ${classname}`}>
 
         <figure className='h-full'>
           <Image className='object-cover w-full h-full' width={300} height={300} src={imgSrc} alt={alt} />

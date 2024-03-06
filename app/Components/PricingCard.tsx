@@ -9,6 +9,7 @@ const PricingCard: React.FC<{
     return (
         <div
             className='
+                scale-on-hover
                 bg-green-to-black
                 bg-gray-400 
                 p-8

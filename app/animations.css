@@ -1,8 +1,36 @@
-@keyframes fadein {
+.scale-on-hover{
+    transition: all 0.3s;
+}
+.scale-on-hover:hover {
+    transform: scale(1.03);
+}
+
+@keyframes fadeInFromTop{
     from  {
-        color: red;
+        transform: translate(0,-6rem);
+        opacity: 0;
     }
     to {
-        color: green;
+        opacity: 1;
     }
+}
+
+.fade-from-top{
+    animation: alternate fadeInFromTop;
+    animation-timeline: view(0px 80px);
+}
+
+@keyframes fadeInFromLeft{
+    from  {
+        transform: translate(-2rem);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadein-text{
+    animation: alternate 1s fadeInFromLeft;
+    animation-range: entry; 
 }
