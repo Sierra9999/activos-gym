@@ -14,7 +14,7 @@ const BMICalculator = () => {
   };
 
   return (
-    <div className="section-margin py-20 flex flex-col md:flex-row">
+    <div id="bmi-calculator" className="section-margin py-20 flex flex-col md:flex-row">
       <div>
         <h1 className="text-3xl">Calculate your bmi</h1>
         <div className="my-7">

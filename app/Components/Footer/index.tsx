@@ -3,8 +3,8 @@ import SocialIcons from '../SocialIcons'
 const Footer = () => {
     return (
         <footer className='lg:mx-10 lg:px-20 px-5 py-20 flex flex-col md:flex-row min-h-48'>
-            <section className="md:w-1/3">
-                <h1>Activos Gym</h1>
+            <section className="mb-10 md:w-1/3">
+                <h1 className='text-2xl'>Activos Gym</h1>
                 Take your health and body to the next level with our comprehensive program designed to help you reach your fitness goals.
                 <SocialIcons />
             </section>

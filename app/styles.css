@@ -68,3 +68,9 @@
     height: 6px;
     width: 40px;
 }
+
+
+header{
+    border-bottom: solid 2px var(--green);
+    z-index: 10 ;
+}

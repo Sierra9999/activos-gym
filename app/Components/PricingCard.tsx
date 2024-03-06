@@ -24,7 +24,7 @@ const PricingCard: React.FC<{
                 <h1 className='text-lg text-center relative t-0'>{title}</h1>
                 <h2 className='text-4xl text-center relative t-0'>{price}/mo</h2>
             {children}
-            <button className='btn bg-green-400 text-black relative left-1/2 -translate-x-1/2 top-48'>Sign me in</button>
+            <a href='#join' className='btn bg-green-400 text-black relative left-1/2 -translate-x-1/2 top-48'>Sign me in</a>
         </div>
     )
 }

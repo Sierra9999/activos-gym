@@ -1,12 +1,8 @@
-
-
-@keyframes textslideinleft {
-    from {
-        top : -20px;
-        opacity: 0;
+@keyframes fadein {
+    from  {
+        color: red;
     }
     to {
-        top: 2rem;
-        opacity: 1;
+        color: green;
     }
 }
