@@ -8,32 +8,32 @@ const BentoMenu = () => {
       workoutName: 'Yoga',
       workoutTime: '00:00',
       caloriesBurnt: '100',
-      imgSrc: 'images/yoga.jpg'
+      imgSrc: '/Images/yoga.jpg'
     },
     {
       workoutName: 'Treadmill',
       workoutTime: '00:00',
       caloriesBurnt: '100',
-      imgSrc: '/images/treadmill.jpg'
+      imgSrc: '/Images/treadmill.jpg'
     },
 
     {
       workoutName: 'Weight Lifting',
       workoutTime: '00:00',
       caloriesBurnt: '100',
-      imgSrc: '/images/weight-lifting.jpg'
+      imgSrc: '/Images/weight-lifting.jpg'
     },
     {
       workoutName: 'Dancing Classes',
       workoutTime: '00:00',
       caloriesBurnt: '100',
-      imgSrc: '/images/dancing-classes.jpg'
+      imgSrc: '/Images/dancing-classes.jpg'
     },
     {
       workoutName: 'Kickboxing',
       workoutTime: '00:00',
       caloriesBurnt: '100',
-      imgSrc: '/images/kickboxing.jpg'
+      imgSrc: '/Images/kickboxing.jpg'
     },
   ]
 
