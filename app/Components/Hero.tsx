@@ -23,7 +23,7 @@ const Hero = () => {
                     md:p-10
                     md:h-3/4
                     md:w-auto
-                    lg:right-40' src="/images/hero.png" alt="" />
+                    lg:right-40' src="/Images/hero.png" alt="" />
         </section>
     )
 }
