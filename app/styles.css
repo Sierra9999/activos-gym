@@ -15,6 +15,9 @@
     font-weight: 600;
     color: black;
 }
+.btn-white-text{
+    color: white;
+}
 
 .bg-green-to-black {
     background: var(--dark-green);

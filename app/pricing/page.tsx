@@ -13,7 +13,7 @@ const Pricing = () => {
         my-10">
         <PricingCard price={0} title='Week Trial'></PricingCard>
         <PricingCard price={20} title='Welcome Pack'></PricingCard>
-        <PricingCard price={20} title='Dance Classes'></PricingCard>
+        <PricingCard price={50} title='Dance Classes'></PricingCard>
         <PricingCard price={100} title='FitPulse Tribe'></PricingCard>
       </section>
 

@@ -62,7 +62,7 @@ const BMICalculator = () => {
         ${rateBMI(results).rate} 
         w-full 
         results 
-        ${ results === 0 ? '' : 'left-to-right' } 
+        ${ results === 0 ? 'invisible' : 'left-to-right' } 
         flex  
         flex-col 
         md:w-1/2 
