@@ -8,7 +8,7 @@ const BentoMenu = () => {
       workoutName: 'Yoga',
       workoutTime: '00:00',
       caloriesBurnt: '100',
-      imgSrc: '/images/yoga.jpg'
+      imgSrc: 'images/yoga.jpg'
     },
     {
       workoutName: 'Treadmill',
