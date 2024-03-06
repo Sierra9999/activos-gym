@@ -26,15 +26,16 @@ const BMICalculator = () => {
           </p>
         </div>
         <form
-          className="flex"
+          className="flex flex-col pr-5 md:flex-row "
           onSubmit={(e) => {
             handleSubmit(e);
           }}
           action=""
         >
-          <div></div>
-          <label className="mr-10" htmlFor="">
+          <div className="flex justify-between">
+          <label className="md:mr-10" htmlFor="">
             <input
+              className="min-w-36"
               value={height}
               onChange={(e) => {
                 setHeight(e.target.value);
@@ -44,8 +45,9 @@ const BMICalculator = () => {
               required
             />
           </label>
-          <label className="mr-10" htmlFor="">
+          <label className="md:mr-10" htmlFor="">
             <input
+            className="min-w-36"
               type="number"
               placeholder="weight /kg"
               value={weight}
@@ -55,7 +57,8 @@ const BMICalculator = () => {
               required
             />
           </label>
-          <button className="button"> Calculate </button>
+          </div>
+          <button className="rounded-md button bg-green-700 p-3 my-5 md:py-0 md:m-0"> Calculate </button>
         </form>
       </div>
       <div  className={` 

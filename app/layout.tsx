@@ -1,8 +1,9 @@
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import { Poppins } from "next/font/google"
+import "./globals.css"
 import "./styles.css"
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+import './animations.css'
+import Header from "./Components/Header"
+import Footer from "./Components/Footer"
 const inter = Poppins({ subsets: ["latin"] ,weight: "400"});
 
 export const metadata = {
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children } : {children : React.ReactNode}) {
   return (
     <html lang="en">
-      <body className={`${inter.className} lg:mx-10 lg:px-20 px-5 py-5 `}>
+      <body className={`${inter.className} `}>
         <Header/>
         {children}
         <Footer/>

@@ -1,0 +1,12 @@
+
+
+@keyframes textslideinleft {
+    from {
+        top : -20px;
+        opacity: 0;
+    }
+    to {
+        top: 2rem;
+        opacity: 1;
+    }
+}
