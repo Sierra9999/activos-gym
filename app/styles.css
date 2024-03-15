@@ -74,7 +74,7 @@
     height: 4px;
     background-color: var(--green);
     position: fixed;
-    top: 0px;
+    top: 60px;
     left: 0px;
     z-index: 1000;
     scale: 0 1;
@@ -88,3 +88,17 @@
         scale: 1 1;
     }
 }
+
+.glass-container{
+/* From https://css.glass */
+color: var(--grey);
+background: rgba(255, 255, 255, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(126, 126, 126, 0.3);
+width: fit-content;
+padding: 1rem;
+}
+

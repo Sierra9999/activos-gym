@@ -1,10 +1,4 @@
-.scale-on-hover{
-    transition: all 0.3s;
-    cursor: pointer;
-}
-.scale-on-hover:hover {
-    transform: scale(1.03);
-}
+
 
 @keyframes fadeInFromTop{
     from  {

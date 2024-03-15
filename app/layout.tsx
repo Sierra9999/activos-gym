@@ -4,7 +4,7 @@ import "./styles.css"
 import './animations.css'
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
-import ScrollWatcher from "./Components/scrollWatcher"
+import ScrollWatcher from "./Components/ScrollWatcher"
 const inter = Poppins({ subsets: ["latin"] ,weight: "400"});
 
 export const metadata = {

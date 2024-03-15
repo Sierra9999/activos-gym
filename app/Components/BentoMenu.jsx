@@ -46,19 +46,15 @@ const BentoMenu = () => {
     workoutTime
   }) => {
     return (
-      <article className={`scale-on-hover rounded-md overflow-hidden ${classname}`}>
+      <article style={{backgroundImage: `url(${imgSrc})`, minHeight:300, backgroundPosition: 'center', backgroundRepeat: 'no-repeat',backgroundSize: "cover"}} className={`rounded-md overflow-hidden ${classname}`}>
 
-        <figure className='h-full'>
-          <Image className='object-cover w-full h-full' width={300} height={300} src={imgSrc} alt={alt} />
-        </figure>
-        <div className='relative bottom-28 left-4 h-0 z-1'>
-          <h2 className='text-xl ml-1 font-bold mb-1'>{workoutName}</h2>
-          <div className=''>
-            <a href="" className=' btn bg-gray-900 mr-2 btn-white-text'><span className="text-yellow">{workoutTime}</span> <br /> Time</a>
-            <a href="" className=' btn bg-gray-900 mr-2 btn-white-text'><span className='text-red'>{caloriesBurnt}</span> <br /> Calories</a>
+        <div className='p-4 bottom-28 left-4 h-0'>
+            <h2 className='glass-container text-2xl ml-1 font-bold mb-2'>{workoutName}</h2>
+            <div className=''>
+              <a href="" className=' btn bg-gray-900 mr-2 btn-white-text'><span className="text-yellow">{workoutTime}</span> <br /> Time</a>
+              <a href="" className=' btn bg-gray-900 mr-2 btn-white-text'><span className='text-red'>{caloriesBurnt}</span> <br /> Calories</a>
+            </div>
           </div>
-        </div>
-        <div className="relative bg-black opacity-50  h-full bottom-full hover:opacity-25 cursor-pointer "></div>
       </article>)
   }
 
