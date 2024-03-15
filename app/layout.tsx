@@ -4,6 +4,7 @@ import "./styles.css"
 import './animations.css'
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
+import ScrollWatcher from "./Components/scrollWatcher"
 const inter = Poppins({ subsets: ["latin"] ,weight: "400"});
 
 export const metadata = {
@@ -16,6 +17,7 @@ export default function RootLayout({ children } : {children : React.ReactNode}) 
     <html lang="en">
       <body className={`${inter.className} `}>
         <Header/>
+        <ScrollWatcher/>
         {children}
         <Footer/>
       </body>
